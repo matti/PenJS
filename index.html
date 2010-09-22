@@ -1,9 +1,16 @@
 <html>
 
+<script src="DropShadow.js"></script>
+
 <style>
+html {
+  overflow: hidden;
+}
+
 body {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+	font-size: 80%;
 }
 img {
 	height: 100%;
@@ -11,14 +18,56 @@ img {
 
 
 div {
-	text-align: center;
+  text-align: center;
 }
 
 div div:first-child {
 	position:absolute;
-
 	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+
+
+@font-face {
+  font-family: "YanoneKaffeesatzRegular";
+  src: local("Yanone Kaffeesatz Regular"), 
+       url("Yanone_Kaffeesatz_Regular.woff") format("woff"),
+       url("Yanone_Kaffeesatz_Regular.otf") format("opentype");
+}
+
+
+h1, h2, h3 {
+  font-family: "YanoneKaffeesatzRegular", sans-serif;
+  color: white;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  
+}
+
+h1 {
+  font-size: 12em;
+  margin-top: 15%;
+
+}
+
+h2 {
+  font-size: 7em;
+}
+
+h3 {
+  font-size: 4em;
+  margin-top: 1em;
+}
+
+.dropshadow {
+   position: relative;
+   z-index:13;
+}
+
+.opaq {
+opacity:0.4;filter:alpha(opacity=40)
 }
 
 </style>
@@ -89,81 +138,107 @@ document.onkeydown = function(e) {
 
 
 <div>
+	<div>
+		<h1 class="dropshadow">PechaKucha!</h1>
+		<h2 class="dropshadow">Sosiaalisen Median Tekniikat</h2>
+		<h3 class="dropshadow">Matti Paksula</h3>
+	</div>
 
 	<div>
-		<h1>LOL</h1>
+		<img src="title.jpg" />
 	</div>
-	
+</div>
+
+
+
+<div>
 	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
+		<h1 class="dropshadow">Facebook</h1>
+		<h2 class="dropshadow">Omat komponentit</h2>
+	</div>
+	<div>
+		<img src="facebook.jpg" class="opaq"  />
+	</div>
+</div>
+
+
+
+<div>
+	<div>
+		<h1 class="dropshadow">Cloud Computing</h1>
+		<h2 class="dropshadow">Hässäkkä</h2>
+	</div>
+	<div>
+		<img src="blue-sky-with-birds.jpg" />
 	</div>
 </div>
 
 <div>
 	<div>
-		<h1>LOL</h1>
+		<h1 class="dropshadow">XaaS</h1>
+		<h2 class="dropshadow">Everything-as-a-Service</h2>
+		<img src="ontology.png" style="position:absolute; z-index: 1000; height: 40em" />
 	</div>
 	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
-	</div>
-</div>
-
-<div>
-	<div>
-		<h1>LOL</h1>
-	</div>
-	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
-	</div>
-</div>
-
-
-<div>
-	<div>
-		<h1>LOL</h1>
-	</div>
-	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
-	</div>
-</div>
-
-<div>
-	<div>
-		<h1>LOL</h1>
-	</div>
-	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
-	</div>
-</div>
-
-<div>
-	<div>
-		<h1>LOL</h1>
-	</div>
-	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
+		<img src="service.jpg" class="opaq" />
 	</div>
 </div>
 
 
 <div>
 	<div>
-		<h1>LOL</h1>
+		<h1 class="dropshadow">SaaS</h1>
+		<h2 class="dropshadow">Software-as-a-Service</h2>
 	</div>
 	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
+		<img src="saas.jpg" />
+	</div>
+</div>
+
+<div>
+	<div>
+		<h1 class="dropshadow">PaaS</h1>
+		<h2 class="dropshadow">Platform-as-a-Service</h2>
+	</div>
+	<div>
+		<img src="paas.jpg" />
+	</div>
+</div>
+
+<div>
+	<div>
+		<h1 class="dropshadow">IaaS</h1>
+		<h2 class="dropshadow">Infrastructure-as-a-Service</h2>
+	</div>
+	<div>
+		<img src="iaas.jpg" />
+	</div>
+</div>
+
+<div>
+	<div>
+		<h1 class="dropshadow">HaaS, DaaS, CaaS, ...</h1>
+		<h2 class="dropshadow">Hardware, Datastore, Communication -aaS</h2>
+	</div>
+	<div>
+		<img src="buzzwordbingo.jpg" />
 	</div>
 </div>
 
 
 <div>
 	<div>
-		<h1>LOL</h1>
+		<h1 class="dropshadow">Pay as you go</h1>
+		<h2 class="dropshadow">Elastinen skaalautuminen</h2>
 	</div>
 	<div>
-		<img src="http://www.lunkos.com/wp-content/uploads/2009/11/lolcat7.gif" />
+		<img src="pay-as-you-go.jpg" />
 	</div>
 </div>
+
+
+
+
 
 
 <div>
